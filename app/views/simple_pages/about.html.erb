@@ -1,2 +1,68 @@
-<h1>SimplePages#about</h1>
-<p>Find me in app/views/simple_pages/about.html.erb</p>
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Racebike666</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= csrf_meta_tags %>
+</head>
+
+<body>
+  <div class="container anchor" id="faq"><!-- FAQ -->
+    <div class="faq_container">
+        <div class="header">
+          <h1>About</h1>
+        </div><!-- end header -->
+
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+              <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><span class="glyphicon glyphicon-plus"></span>
+                  What is Racebike666
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="panel-body">
+                <p>Racebike666 is a newly developed generation of bicycles. Their sleek and light design allows you to reach high performances and get the Tour de France feeling on your everyday bike. The Racebike666 is built purely from ultrahard materials to increase its sturdiness and hence its everyday viability. </p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingTwo">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><span class="glyphicon glyphicon-plus"></span>
+                  Who is behind Racebike666
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="panel-body">
+                <p>Racebike666 was founded and is still operated by three young students from Germany, Incontinentia Buttocks, Biggus Dickus and Reinhard Waibel. The three meat during their business studies at EBS University and bonded through their passion for racing bikes.</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingThree">
+              <h4 class="panel-title">
+                <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><span class="glyphicon glyphicon-plus"></span>
+                  How can I become a part of this revolution?
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="panel-body">
+                <p>We are still working on a distribution chain and front, but if you can't wait and want to become one of the few testdrivers email us! Email can be found in the contact page. <li><%= link_to "Contact", simple_pages_contact_path %></li>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>

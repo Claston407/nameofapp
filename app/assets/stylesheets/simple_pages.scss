@@ -5,6 +5,7 @@ h1 {
 
 body{
   padding-top: 30px;
+  background-image: url("backg.jpg");
 }
 
 footer {
@@ -16,6 +17,20 @@ footer {
   background-color: #efefef;
   text-align: center;
 }
+
+.contact{
+	padding-left: 3rem;
+	padding-top: 1rem;
+	font-size: 1.75em;
+	font-weight: 100;
+	-webkit-margin-before: 0;
+}
+
+.cheadline{
+	padding-left: 3rem;
+	padding-top: 1rem;
+}
+
 
 .nav {
   z-index: 1;
